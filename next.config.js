@@ -2,6 +2,15 @@
 const nextConfig = {
   headers: async () => [
     {
+      source: "/:path*",
+      headers: [
+        {
+          key: "Connection",
+          value: "close",
+        },
+      ],
+    },
+    {
       source: "/:all*(svg|jpg|png)",
       locale: false,
       headers: [
