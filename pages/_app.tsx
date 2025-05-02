@@ -9,11 +9,11 @@ import YoutubeSong from "@/components/YoutubeSong";
 import { checkTheme } from "@/components/CheckMode";
 import ToggleMode from "@/components/ToggleMode";
 import CertificateData from "../Data/CertificatesData.json";
-import { decryptText as dt } from "../components/lib";
+// import { decryptText as dt } from "../components/lib";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isFlowerFall, setIsFlowerFall] = useState(false);
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  // const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isMobile, setIsMobile] = useState(true);
 
   const AppComponent = Component as any;
@@ -26,21 +26,21 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     checkTheme();
-    let link =
-      "iuuqt;00xxx/bozujpo/dpn0x" +
-      "q.dpoufou0vqmpbet03134016" +
-      "025:bge7427:4d9:6g92f619f" +
-      "c6bbfg48/nq4";
-    setAudio(new Audio(dt(link)));
+    // let link =
+    //   "iuuqt;00xxx/bozujpo/dpn0x" +
+    //   "q.dpoufou0vqmpbet03134016" +
+    //   "025:bge7427:4d9:6g92f619f" +
+    //   "c6bbfg48/nq4";
+    // setAudio(new Audio(dt(link)));
     setIsMobile(!!window.navigator.userAgent.match(/Mobile/));
   }, []);
 
   const changeFlowerFall = () => {
     setIsFlowerFall(!isFlowerFall);
-    if (isMobile) {
-      if (isFlowerFall) audio?.pause();
-      else audio?.play();
-    }
+    // if (isMobile) {
+    //   if (isFlowerFall) audio?.pause();
+    //   else audio?.play();
+    // }
   };
   return (
     <>
