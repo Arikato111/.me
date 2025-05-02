@@ -2,7 +2,10 @@ import { FC, useState } from "react";
 
 const YoutubeSong: FC = () => {
   const darktheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const SongList = darktheme ? ["OnkmC5qZqRE", "90Fpjwctqlw"] : ["5Z3kPL_UAys"];
+  const SongList = darktheme ?
+    ["OnkmC5qZqRE", "90Fpjwctqlw"]
+    :
+    ["5Z3kPL_UAys", "iB3_NR5bYVc", "UqJkaAnXSWw", "qkZtGDG36kw", "dHDNHIxmBNU", "w6Y_6zrCLFw", "UlmvjbjCLeA"];
 
   // useState but no setState because it's never used.
   const [randomNumber] = useState(Math.floor(Math.random() * SongList.length));
