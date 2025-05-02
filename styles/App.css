@@ -17,7 +17,7 @@
 }
 
 .bg-beautiful {
-  background-image: url("/bg2.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Fbg2.jpg?alt=media");
   /* filter: hue-rotate(250deg); */
   background-position: center;
   background-repeat: no-repeat, repeat;
