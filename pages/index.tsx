@@ -49,7 +49,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
       </Head>
       <main className={`main-flex ${isFlowerFall ? "bg-transparent dark:bg-current" : ""}`}>
         {isFlowerFall && (
-          <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"></div>
+          <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 blur-md bg-beautiful dark:hidden"></div>
         )}
         <div className="preview flex flex-col items-center">
           <Banner isSwiching={isFlowerFall} />
