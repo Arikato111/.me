@@ -81,26 +81,6 @@
     },
     {
         "id": 8,
-        "type": "dev tool",
-        "title": "GitHub for Developer",
-        "img": {
-            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fgithub-learn-borntodev.png?alt=media",
-            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fgithub-learn-borntodev.png?alt=media"
-        },
-        "link": "https://school.borntodev.com/certificate/DdQptfY4fh3l"
-    },
-    {
-        "id": 9,
-        "type": "dev tool",
-        "title": "Azure functions",
-        "img": {
-            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fazure-learn-borntodev.png?alt=media",
-            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fazure-learn-borntodev.png?alt=media"
-        },
-        "link": "https://school.borntodev.com/certificate/Ynmsii3x8w7r"
-    },
-    {
-        "id": 10,
         "type": "network",
         "title": "server monitoring",
         "img": {
