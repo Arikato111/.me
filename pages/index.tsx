@@ -20,6 +20,7 @@ type HomeProps = {
   changeFlowerFall: Function;
 };
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
+  const title = 'Arikato111 (Nawasan Wisitsingkhon)';
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
   const flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
 
@@ -44,8 +45,8 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   return (
     <>
       <Head>
-        <DefaultMetaTag />
-        <title>Arikato111</title>
+        <DefaultMetaTag title={title} />
+        <title>{title}</title>
       </Head>
       <main className={`main-flex ${isFlowerFall ? "bg-transparent dark:bg-current" : ""}`}>
         {isFlowerFall && (

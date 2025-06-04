@@ -1,3 +1,4 @@
+import AboutMe from '@/Data/AboutMe.json'
 type MetaTagInput = {
     title: string;
     description: string;
@@ -21,10 +22,11 @@ export default function MetaTag({ title, description, url, image }: MetaTagInput
     </>
 }
 
-export function DefaultMetaTag() {
+export function DefaultMetaTag(props: { title?: string }) {
     return <MetaTag
-        title="Arikato111"
-        description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
+        title={props.title ?? 'Arikato111 (Nawasan Wisitsingkhon)'}
+        // description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
+        description={AboutMe.detail}
         image="https://nawasan.dev/example-page.png"
         url="https://nawasan.dev"
     />
