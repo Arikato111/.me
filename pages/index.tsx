@@ -4,8 +4,8 @@ import CertificateIcon from "@/components/icons/CertificateIcon";
 import FileIcon from "@/components/icons/FileIcon";
 import FlowerIcon from "@/components/icons/FlowerIcon";
 import GithubIcon from "@/components/icons/GithubIcon";
+import MusicIcon from "@/components/icons/MusicIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
-import OnlyFansIcon from "@/components/icons/OnlyFansIcon";
 import ThreeWord from "@/components/ThreeWord";
 import Projects from "@/Data/ProjectsData.json";
 import Head from "next/head";
@@ -21,8 +21,8 @@ type HomeProps = {
 };
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   const title = 'Arikato111 (Nawasan Wisitsingkhon)';
-  const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
-  const flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
+  const TheFlowerIcon = isFlowerFall ? FlowerIcon : MusicIcon;
+  const flowerTitle = isFlowerFall ? "in the spring" : "Music";
 
   const onSpecial = () => {
     changeFlowerFall();
