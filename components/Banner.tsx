@@ -21,7 +21,7 @@ const Banner: FC<BannerProps> = ({ isSwiching }) => {
                 ><span>Arikato111</span></h1
                 ><span
                     className="inline-block hover:rotate-45 duration-300 ease-in-out transition"
-                >👋</span
+                >🤖</span
                 ></>)
         }
     </div>
