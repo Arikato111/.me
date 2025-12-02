@@ -60,7 +60,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             <ThreeWord word1="Learning" word2="Creating" word3="Development" />
           )}
           <nav className="sm:flex flex-wrap items-center justify-center">
-            <a href="https://github.com/Arikato111">
+            <a href="https://github.com/ZocketZero">
               <ButtonContact
                 Class="mobile-size"
                 title="Github"
