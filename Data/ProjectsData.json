@@ -4,14 +4,14 @@
         "descript": " the software defined network with rust and Openflow protocol, to learning and creating simple SDN",
         "link": "https://crates.io/crates/tenjin_sdn",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Ftenjin.png?alt=media",
-        "source": "https://github.com/Arikato111/Tenjin"
+        "source": "https://github.com/ZocketZero/Tenjin"
     },
     {
         "title": "Social media with php",
         "descript": "โปรเจคทำเว็บโซเชียลมีเดียเบื้อนต้น ด้วยภาษา PHP และฐานข้อมูล MySQL โดยมีโครงสร้างการเขียน PHP ที่ต่างออกไป",
         "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Faden.png?alt=media",
-        "source": "https://github.com/Arikato111/social-web-php"
+        "source": "https://github.com/ZocketZero/social-web-php"
     },
     {
         "title": "packages for php",
@@ -25,48 +25,48 @@
         "descript": "คลังเก็บหนังสือที่น่าสนใจ หรือแนะนำให้อ่าน พร้อมกับระบบสุ่มรายการหนังสือ เผื่อว่าเลือกไม่ถูก ตัดสินใจไม่ได้",
         "link": "https://what-to-read-nu.vercel.app/",
         "img": "https://what-to-read-nu.vercel.app/example.png",
-        "source": "https://github.com/Arikato111/what-to-read"
+        "source": "https://github.com/ZocketZero/what-to-read"
     },
     {
         "title": "life coach",
         "descript": "If you have life, you must have life coach.",
         "link": "https://life-coach-quotes.vercel.app",
         "img": "https://life-coach-quotes.vercel.app/example-page.png",
-        "source": "https://github.com/Arikato111/life-coach-quotes"
+        "source": "https://github.com/ZocketZero/life-coach-quotes"
     },
     {
         "title": "movie random react",
         "descript": "รวมรายการภาพยนตร์สนุกๆ พร้อมกับการสุ่มเพื่อเลือกดูภาพยนตร์ รับรองคุณภาพและความสนุกเพราะดูมาแล้ว",
         "link": "https://movie-random-react.vercel.app",
         "img": "https://movie-random-react.vercel.app/example-page.png",
-        "source": "https://github.com/Arikato111/movie-random-react"
+        "source": "https://github.com/ZocketZero/movie-random-react"
     },
     {
         "title": "next food random",
         "descript": "คิดไม่ออกจะกินอะไรดี งั้นไม่ต้องคิด สุ่มเอา รับเมนูอาหารจากการสุ่ม พร้อมรูปภาพ สูตรวิธีการทำ",
         "link": "https://next-food-random.vercel.app",
         "img": "https://next-food-random.vercel.app/example-page.png",
-        "source": "https://github.com/Arikato111/next-food-random"
+        "source": "https://github.com/ZocketZero/next-food-random"
     },
     {
         "title": "Find subnet mask",
         "descript": "โปรแกรม command line คำนวณหา subnet mask เขียนด้วยภาษา Rust",
         "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Ffine_subnet.png?alt=media",
-        "source": "https://github.com/Arikato111/find_subnet"
+        "source": "https://github.com/ZocketZero/find_subnet"
     },
     {
         "title": "lad theme firefox",
         "descript": "ธีมสำหรับ firefox browser พร้อมทั้งสำหรับ light mode และ dark mode ในธีมเดียว",
         "link": "https://addons.mozilla.org/en-US/firefox/addon/lad-light-and-dark-theme/",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Flad_theme_firefox.png?alt=media",
-        "source": "https://github.com/Arikato111/lad-theme-firefox"
+        "source": "https://github.com/ZocketZero/lad-theme-firefox"
     },
     {
         "title": "publish files",
         "descript": "เว็บไซต์สำหรับเก็บและเผยแพร่ไฟล์ เขียนด้วย React เชื่อมต่อกับ Firebase",
         "link": "https://source.nawasan.dev",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Fpublish-file.png?alt=media",
-        "source": "https://github.com/Arikato111/publish-files"
+        "source": "https://github.com/ZocketZero/publish-files"
     }
 ]
