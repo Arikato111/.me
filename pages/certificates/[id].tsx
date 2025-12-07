@@ -21,7 +21,7 @@ export default function SingleCertificate({ data }: CerProps) {
           image={`https://nawasan.dev/cer/${data.img}`}
           url="https://nawasan.dev"
         />
-        <title>{`${data.title} | Arikato111`}</title>
+        <title>{`${data.title} | ZocketZero`}</title>
       </Head>
       <main className="main">
         <div>

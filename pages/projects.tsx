@@ -11,7 +11,7 @@ export default function Projects() {
     <>
       <Head>
         <DefaultMetaTag />
-        <title>Projects | Arikato111</title>
+        <title>Projects | ZocketZero</title>
       </Head>
       <main className="main">
         <div className="inline-block">

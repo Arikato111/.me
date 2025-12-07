@@ -12,7 +12,7 @@ export default function Certificates() {
     <>
       <Head>
         <DefaultMetaTag />
-       <title>Certificates | Arikato111</title>
+       <title>Certificates | ZocketZero</title>
       </Head>
       <main className="main">
         <div className="inline-block">

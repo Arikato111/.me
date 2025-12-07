@@ -38,7 +38,7 @@ export default function Novel({ isFlowerFall }: MessageProps) {
       <>
         <Head>
           <DefaultMetaTag />
-          <title>Message | Arikato111</title>
+          <title>Message | ZocketZero</title>
         </Head>
         <main className="main bg-yellow-100/40 dark:bg-black">
           <div className="inline-block">
@@ -68,7 +68,7 @@ export default function Novel({ isFlowerFall }: MessageProps) {
       <>
         <Head>
           <DefaultMetaTag />
-          <title>Message | Arikato111</title>
+          <title>Message | ZocketZero</title>
         </Head>
         <main className="main bg-yellow-100/40 dark:bg-black">
           <div className="inline-block">

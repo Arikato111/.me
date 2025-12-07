@@ -20,7 +20,7 @@ type HomeProps = {
   changeFlowerFall: Function;
 };
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
-  const title = 'Arikato111 (Nawasan Wisitsingkhon)';
+  const title = 'ZocketZero (Nawasan Wisitsingkhon)';
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : MusicIcon;
   const flowerTitle = isFlowerFall ? "in the spring" : "Music";
 
