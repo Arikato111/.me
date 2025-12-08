@@ -29,11 +29,11 @@ const nextConfig = {
   ],
   reactStrictMode: true,
   images: {
-    domains: [
-      "life-coach-quotes.vercel.app",
-      "what-to-read-nu.vercel.app",
-      "movie-random-react.vercel.app",
-      "next-food-random.vercel.app",
+    remotePatterns: [
+      new URL("https://life-coach-quotes.vercel.app"),
+      new URL("https://what-to-read-nu.vercel.app"),
+      new URL("https://movie-random-react.vercel.app"),
+      new URL("https://next-food-random.vercel.app"),
     ],
   },
 };
