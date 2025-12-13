@@ -12,22 +12,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.17",
-    "@types/node": "24.10.2",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "25.0.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "eslint": "9.39.1",
-    "eslint-config-next": "16.0.8",
-    "next": "^16.0.8",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.0.10",
+    "next": "^16.0.10",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "sharp": "^0.34.5",
     "typescript": "5.9.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.22",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.18"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
