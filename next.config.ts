@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   headers: async () => [
     {
       source: "/:path*",
@@ -38,4 +39,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig
