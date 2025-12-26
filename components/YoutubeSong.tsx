@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 const YoutubeSong: FC = () => {
   const darktheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const SongList = darktheme ?
-    ["OnkmC5qZqRE", "90Fpjwctqlw"]
+    ["OnkmC5qZqRE", "90Fpjwctqlw", "90Fpjwctqlw", "OJ62RzJkYUo"]
     :
     ["5Z3kPL_UAys", "iB3_NR5bYVc", "UqJkaAnXSWw", "qkZtGDG36kw", "dHDNHIxmBNU", "w6Y_6zrCLFw", "UlmvjbjCLeA"];
 
