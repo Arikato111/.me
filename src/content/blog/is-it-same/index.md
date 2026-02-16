@@ -9,7 +9,7 @@ tags:
 
 ## ว่าด้วยเรื่องของ เขียนโค้ด ภาษาไหนก็เหมือนกัน ต่างกันแค่ syntax
 
-![banner](https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png)
+![banner](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Fcode.jpg?alt=media)
 
 เคยได้ยินแนวคิดที่ว่า "ภาษาไหนก็เหมือนกัน" หรือไม่? คำอธิบายเพิ่มเติมของแนวคิดนี้คือ ไม่ว่าจะเป็นภาษาไหนก็ไม่ได้มีความแตกต่างกัน ถ้าเราเข้าใจโค้ด เข้าใจ algorithm เราก็สามารถเขียนภาษาอื่นๆ ได้ สิ่งที่ต้องเรียนเพิ่มก็คือ syntax ของภาษานั้นๆ
 เป็นต้นว่า ถ้าเราเขียนภาษา Javascript อยู่แล้ว และต้องการเรียน Python เราก็จะใช้เวลาไม่นานในการเรียน และโดยมากจะเป็นการเรียนรู้ syntax ของการเขียนภาษา Python
