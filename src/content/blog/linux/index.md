@@ -6,6 +6,7 @@ tags:
   - 🐧linux
   - beginner
   - os
+  - computer
 ---
 
 ![Linux-banner](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Flinux.jpg?alt=media)
