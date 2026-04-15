@@ -9,7 +9,7 @@ tags:
   - computer
 ---
 
-![Linux-banner](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Flinux.jpg?alt=media)
+![Linux-banner](./linux-banner.png)
 
 ## Linux คืออะไร?
 
@@ -81,7 +81,7 @@ Destop Environments หรือ DE ก็คือ Software ตัวหนึ�
 มี Icons มีแถบสถานะ และอื่นๆ เราสามารถเลือกหน้าตาแบบใดก็ได้ที่ต้องการ รวมไปถึงการปรับแต่งเพิ่มเติม
 ### GNOME
 
-![gnome-desktop](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Fdebian.png?alt=media)
+![gnome-desktop](./gnome.webp)
 
 https://www.gnome.org/
 
@@ -91,7 +91,7 @@ Linux ครั้งแรกจาก Ubuntu ซึ่งเป็น Linux Di
 มีความเรียบง่าย ไม่มีอะไรยุ่งยาก ซับซ้อน หรือเกินความจำเป็น
 ### KDE Plasma
 
-![kde-plasma-desktop](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Ffullscreen_with_apps.png?alt=media)
+![kde-plasma-desktop](./kde.png)
 
 https://kde.org/plasma-desktop/
 
@@ -104,7 +104,7 @@ KDE Plasma เป็น DE ที่มีความคล้ายคลึ�
 และอาจจะทำให้หนักเครื่อง เนื่องจากต้องติดตั้งส่วนเสริมเยอะพอสมควร 
 ### Xfce
 
-![xfce-desktop](https://firebasestorage.googleapis.com/v0/b/source-54c83.appspot.com/o/source%2Ffor-blog%2Fscreenshot-xfce.jpg?alt=media)
+![xfce-desktop](./xfce.webp)
 
 https://www.xfce.org/
 
