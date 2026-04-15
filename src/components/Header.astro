@@ -4,45 +4,42 @@ import Link from "@components/Link.astro";
 import { SITE } from "@consts";
 ---
 
-<header transition:persist>
+<header transition:persist class="animate">
   <Container>
-    <div class="flex flex-wrap justify-between gap-y-2 dark:text-green-500">
-      <Link href="/" underline={false}>
-        <div class="font-semibold">
-          {SITE.TITLE}&nbsp;🔬
+    <div class="flex flex-wrap items-center justify-between gap-y-4">
+      <Link href="/" underline={false} class="group">
+        <div class="font-bold text-xl tracking-tighter text-neutral-900 dark:text-neutral-50 transition-colors group-hover:text-primary dark:group-hover:text-primary-dark">
+          {SITE.TITLE}&nbsp;<span class="inline-block transition-transform group-hover:rotate-12 group-hover:scale-110">🔬</span>
         </div>
       </Link>
-      <nav class="flex items-center gap-1 text-sm sm:text-base font-bold">
-        <Link href="/blog">blog</Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/tags">tags</Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/projects">projects</Link>
-        <span>
-          {`/`}
-        </span>
+      
+      <nav class="flex items-center gap-2 sm:gap-4 font-medium">
+        <div class="flex items-center gap-1 sm:gap-2">
+          <Link href="/blog" class="px-2 py-1 hover:text-primary dark:hover:text-primary-dark transition-colors">blog</Link>
+          <span class="text-neutral-300 dark:text-neutral-700">/</span>
+          <Link href="/tags" class="px-2 py-1 hover:text-primary dark:hover:text-primary-dark transition-colors">tags</Link>
+          <span class="text-neutral-300 dark:text-neutral-700">/</span>
+          <Link href="/projects" class="px-2 py-1 hover:text-primary dark:hover:text-primary-dark transition-colors">projects</Link>
+        </div>
+
         <button
           id="magnifying-glass"
           aria-label="Search"
-          class="flex items-center rounded-sm border border-black/15 bg-neutral-100 px-2 py-1 text-xs transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+          class="flex items-center justify-center rounded-full size-10 bg-neutral-100 dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 hover:bg-primary/10 hover:text-primary transition-all duration-300 border border-transparent hover:border-primary/20"
         >
           <svg
-            height="16"
+            height="18"
             stroke-linejoin="round"
             viewBox="0 0 16 16"
-            width="16"
-            style="color: currentcolor;"
-            ><path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3.5 7C3.5 5.067 5.067 3.5 7 3.5C8.933 3.5 10.5 5.067 10.5 7C10.5 7.88461 10.1718 8.69256 9.63058 9.30876L9.30876 9.63058C8.69256 10.1718 7.88461 10.5 7 10.5C5.067 10.5 3.5 8.933 3.5 7ZM9.96544 11.0261C9.13578 11.6382 8.11014 12 7 12C4.23858 12 2 9.76142 2 7C2 4.23858 4.23858 2 7 2C9.76142 2 12 4.23858 12 7C12 8.11014 11.6382 9.13578 11.0261 9.96544L14.0303 12.9697L14.5607 13.5L13.5 14.5607L12.9697 14.0303L9.96544 11.0261Z"
-              fill="currentColor"></path></svg
+            width="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            class="transition-transform group-hover:scale-110"
           >
-          &nbsp;Search
+            <circle cx="7" cy="7" r="5" />
+            <path d="M11 11L15 15" stroke-linecap="round" />
+          </svg>
         </button>
       </nav>
     </div>

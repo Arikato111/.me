@@ -2,43 +2,47 @@
 import Link from "./Link.astro";
 ---
 
-<section>
-  <article class="space-y-4">
-    <span>
+<section class="animate">
+  <div class="flex flex-col-reverse md:flex-row gap-8 items-start">
+
+    <div class="relative shrink-0 mx-auto md:mx-0">
+      <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-primary to-emerald-300 opacity-30 blur-xl dark:opacity-20"></div>
       <img
-        class="h-50 w-50 rounded-2xl border-2 border-green-500"
+        class="relative h-48 w-48 md:h-56 md:w-56 rounded-2xl border border-neutral-200 dark:border-neutral-800 object-cover shadow-2xl"
         src="https://avatars.githubusercontent.com/u/96001130?v=4"
-        alt="github profile image"
+        alt="Nawasan's profile"
       />
-    </span>
-    <span>
-      <p>
-        สวัสดีผู้ที่หลงเข้ามาทุกท่านครับ ผมชื่อ <b>ณวสันต์</b>
-        เป็นคนธรรมดาๆ ที่ชื่นชอบเกี่ยวกับคอมพิวเตอร์และการเขียนโปรแกรม
-      </p>
-      <p>
-        <span>
-          แน่นอนครับว่า <Link href="/blog">blog</Link> ที่เขียนขึ้นมานี้ จะมาจากความคิดเห็นส่วนตัว
-          ประสบการณ์ และความรู้ที่ผมได้ศึกษามา
-          ซึ่งอาจจะไม่ถูกต้องทั้งหมด
-          ดังนั้นผู้อ่านควรใช้วิจารณญาณในการอ่านและนำไปใช้ด้วยนะครับ 😄
-        </span>
-      </p>
-      <p>
-        <span>
-          และในส่วนของ <em>project</em> ต่างๆ ที่ผมได้พัฒนาขึ้นมา
-          บางส่วนก็จะสร้างขึ้นมาเพื่อแก้ปัญหาที่ผมเจอในชีวิตประจำวัน
-          ซึ่งด้วยผมใช้ Linux เป็นหลัก การทดสอบโปรแกรมต่างๆ
-          จึงมักจะเน้นไปที่ระบบปฏิบัติการ Linux เป็นหลัก แม้จะไม่ได้ทดสอบบนระบบปฏิบัติการอื่นๆ
-          แต่ก็หวังเป็นอย่างยิ่งว่ามันจะทำงานได้
-        </span>
-      </p>
-      <p>
-        สามารถติดตามผลงานการเขียนโค้ดของผมได้ที่
-        <Link external href="https://github.com/ZocketZero">
-          GitHub
+    </div>
+
+    <div class="flex-1 space-y-6">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">
+        สวัสดีครับ 👋 <br/>
+        ผมชื่อ <span class="text-primary dark:text-primary-dark">ณวสันต์</span>
+      </h1>
+      
+      <div class="space-y-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+        <p>
+          เป็นคนธรรมดาๆ ที่ชื่นชอบเกี่ยวกับคอมพิวเตอร์และการเขียนโปรแกรม และหลงใหลในการแบ่งปันความรู้ผ่านตัวอักษร
+        </p>
+        
+        <p>
+          ใน <Link href="/blog">blog</Link> แห่งนี้ ผมรวบรวมความคิดเห็น ประสบการณ์ และความรู้จากการศึกษาค้นคว้า 
+          ซึ่งอาจมีทั้งสิ่งที่ถูกต้องและผิดพลาด จึงขอให้ผู้อ่านใช้วิจารณญาณในการอ่านนะครับ 😄
+        </p>
+        
+        <p>
+          สำหรับการพัฒนา <Link href="/projects">project</Link> ผมมักเน้นไปที่การแก้ปัญหาในชีวิตประจำวัน 
+          โดยใช้ <strong>Linux</strong> เป็นระบบปฏิบัติการหลักในการพัฒนาและทดสอบ 
+          หวังว่าผลงานเหล่านี้จะเป็นประโยชน์ต่อผู้อื่นไม่มากก็น้อย
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-4 pt-2">
+        <Link external href="https://github.com/ZocketZero" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900 dark:bg-neutral-50 text-white dark:text-neutral-900 font-medium transition-transform hover:scale-105">
+          <span>Follow on GitHub</span>
         </Link>
-      </p>
-    </span>
-  </article>
+      </div>
+    </div>
+
+  </div>
 </section>

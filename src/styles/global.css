@@ -9,15 +9,15 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --color-primary: var(--color-emerald-500);
+  --color-primary-dark: var(--color-emerald-400);
 }
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
 */
 @layer base {
   *,
@@ -25,7 +25,14 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: var(--color-neutral-200, currentColor);
+  }
+  .dark *,
+  .dark ::after,
+  .dark ::before,
+  .dark ::backdrop,
+  .dark ::file-selector-button {
+    border-color: var(--color-neutral-800, currentColor);
   }
 }
 
@@ -33,6 +40,7 @@
   html {
     overflow-y: auto;
     color-scheme: light;
+    scroll-behavior: smooth;
     scroll-padding-top: 100px;
   }
 
@@ -48,63 +56,64 @@
   body {
     @apply font-sans antialiased;
     @apply flex flex-col;
-    @apply bg-neutral-100 dark:bg-neutral-900;
-    @apply text-black/75 dark:text-white/75;
+    @apply bg-white dark:bg-neutral-950;
+    @apply text-neutral-800 dark:text-neutral-200;
+    @apply selection:bg-primary/20 selection:text-primary;
   }
 
   header {
-    @apply fixed left-0 right-0 top-0 z-50 py-6;
-    @apply bg-neutral-100/75 dark:bg-neutral-900/75;
-    @apply saturate-200 backdrop-blur-xs;
+    @apply fixed left-0 right-0 top-0 z-50 py-4;
+    @apply bg-white/80 dark:bg-neutral-950/80;
+    @apply saturate-150 backdrop-blur-md;
+    @apply border-b border-neutral-200/50 dark:border-neutral-800/50;
   }
 
   main {
-    @apply flex-1 py-32;
+    @apply flex-1 py-24;
   }
 
   footer {
-    @apply py-6 text-sm;
+    @apply py-12 text-sm text-neutral-500 dark:text-neutral-400;
+    @apply border-t border-neutral-200/50 dark:border-neutral-800/50;
   }
 
   article {
-    @apply prose prose-neutral max-w-full dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-    @apply prose-headings:font-semibold;
-    @apply prose-headings:text-black dark:prose-headings:text-white;
+    @apply prose prose-neutral max-w-none dark:prose-invert;
+    @apply prose-headings:font-bold prose-headings:tracking-tight;
+    @apply prose-headings:text-neutral-900 dark:prose-headings:text-neutral-50;
+    @apply prose-p:leading-relaxed prose-p:text-neutral-700 dark:prose-p:text-neutral-300;
+    @apply prose-a:no-underline hover:prose-a:underline;
+    @apply prose-img:rounded-xl prose-img:shadow-sm;
   }
 }
 
 @layer utilities {
   article a {
-    @apply font-sans text-current underline underline-offset-[3px];
-    @apply decoration-black/30 dark:decoration-white/30;
-    @apply transition-colors duration-300 ease-in-out;
+    @apply font-medium text-primary dark:text-primary-dark underline-offset-4 decoration-primary/30;
+    @apply transition-all duration-200 ease-in-out;
   }
   article a:hover {
-    @apply text-black dark:text-white;
-    @apply decoration-black/50 dark:decoration-white/50;
+    @apply decoration-primary;
   }
 }
 
 .animate {
-  @apply -translate-y-3 opacity-0;
-  @apply transition-all duration-300 ease-out;
+  @apply translate-y-4 opacity-0;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate.show {
   @apply translate-y-0 opacity-100;
 }
 
-html #back-to-top {
-  @apply pointer-events-none opacity-0;
+/* Glassmorphism utility */
+.glass {
+  @apply bg-white/10 dark:bg-black/10 backdrop-blur-md border border-white/20 dark:border-white/5;
 }
 
-html.scrolled #back-to-top {
-  @apply pointer-events-auto opacity-100;
-}
-
-/* shiki config */
+/* Shiki config */
 pre {
-  @apply border border-black/15 py-5 dark:border-white/20;
+  @apply rounded-xl border border-neutral-200/50 bg-neutral-50 p-4 dark:border-neutral-800/50 dark:bg-neutral-900/50;
 }
 
 :root {
