@@ -2,27 +2,29 @@
 import Search from "astro-pagefind/components/Search.astro";
 ---
 
-<aside data-pagefind-ignore>
+<aside id="search-box" class="hidden" data-pagefind-ignore>
   <div
     transition:persist
     id="backdrop"
-    class="bg-[rgba(0, 0, 0, 0.5)] invisible fixed left-0 top-0 z-50 flex h-screen w-full justify-center p-6 backdrop-blur-xs"
+    class="bg-[rgba(0, 0, 0, 0.5)] fixed top-0 left-0 z-50 flex h-screen w-full justify-center p-6 backdrop-blur-xs"
   >
     <div
       id="pagefind-container"
-      class="m-0 flex h-fit max-h-[80%] w-full max-w-(--breakpoint-sm) flex-col overflow-auto rounded-sm border border-black/15 bg-neutral-100 p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-neutral-900"
+      class="overflow-visible m-0 flex h-fit max-h-[80%] w-full max-w-(--breakpoint-sm) flex-col rounded-sm border border-black/15 bg-neutral-100 p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-neutral-900"
     >
-      <Search
-        instance="search"
-        className="pagefind-ui"
-        searchboxOptions={{
-          showImages: false,
-          excerptLength: 15,
-          resetStyles: false,
-        }}
-      />
-      <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
-        Press <span class="prose text-xs dark:prose-invert"
+      <div id="search">
+        <Search
+          instance="search"
+          className="pagefind-ui"
+          searchboxOptions={{
+            showImages: false,
+            excerptLength: 15,
+            resetStyles: false,
+          }}
+        />
+      </div>
+      <div class="dark:prose-invert mr-2 pt-4 pb-1 text-right text-xs">
+        Press <span class="prose dark:prose-invert text-xs"
           ><kbd class="">Esc</kbd></span
         > or click anywhere to close
       </div>
@@ -33,6 +35,7 @@ import Search from "astro-pagefind/components/Search.astro";
 <script is:inline>
   const magnifyingGlass = document.getElementById("magnifying-glass");
   const backdrop = document.getElementById("backdrop");
+  const searchBox = document.getElementById("search-box")
 
   function openPagefind() {
     const searchDiv = document.getElementById("search");
@@ -40,15 +43,14 @@ import Search from "astro-pagefind/components/Search.astro";
     setTimeout(() => {
       search.focus();
     }, 0);
-    backdrop?.classList.remove("invisible");
-    backdrop?.classList.add("visible");
+    searchBox.classList.remove('hidden')
   }
 
   function closePagefind() {
-    const search = document.getElementById("search");
+    const searchDiv = document.getElementById("search");
+    const search = searchDiv.querySelector("input");
     search.value = "";
-    backdrop?.classList.remove("visible");
-    backdrop?.classList.add("invisible");
+    searchBox.classList.add('hidden')
   }
 
   // open pagefind
